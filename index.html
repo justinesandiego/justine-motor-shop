@@ -3,434 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Justine Motor Shop</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f2f2f2;
-            color: #333;
-        }
-
-        /* HEADER */
-        header {
-            background: #151515;
-            color: white;
-            text-align: center;
-            padding: 35px 20px;
-            border-bottom: 4px solid #e63946;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
-
-        header p {
-            margin-top: 10px;
-            color: #cccccc;
-            font-size: 17px;
-        }
-
-        /* NAVIGATION */
-        nav {
-            background: #222;
-            text-align: center;
-            padding: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #e63946;
-        }
-
-        /* MAIN */
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 30px 20px;
-        }
-
-        /* HERO */
-        .hero {
-            background: white;
-            text-align: center;
-            padding: 30px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
-        }
-
-        .hero img {
-            width: 100%;
-            max-width: 650px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .hero h2 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 17px;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .shop-button {
-            display: inline-block;
-            background: #e63946;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .shop-button:hover {
-            background: #c92f3c;
-        }
-
-        /* ABOUT */
-        .about {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin-bottom: 35px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
-        }
-
-        .about h2 {
-            color: #e63946;
-        }
-
-        .about p {
-            line-height: 1.7;
-        }
-
-        /* PRODUCTS */
-        .products-title {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .products {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .product {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
-            transition: 0.3s;
-        }
-
-        .product:hover {
-            transform: translateY(-5px);
-        }
-
-        .product img {
-            width: 100%;
-            height: 210px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .product-content {
-            padding: 20px;
-        }
-
-        .product h3 {
-            margin-top: 0;
-        }
-
-        .product p {
-            color: #666;
-            line-height: 1.5;
-        }
-
-        .price {
-            color: #e63946;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        /* OWNER */
-        .owner {
-            background: #151515;
-            color: white;
-            text-align: center;
-            padding: 35px 20px;
-            border-radius: 12px;
-            margin-top: 40px;
-        }
-
-        .owner img {
-            width: 140px;
-            height: 140px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #e63946;
-            margin-bottom: 15px;
-        }
-
-        .owner h2 {
-            margin: 5px 0;
-        }
-
-        .owner p {
-            color: #cccccc;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #111;
-            color: #999;
-            text-align: center;
-            padding: 25px;
-            margin-top: 40px;
-        }
-
-        /* MOBILE */
-        @media (max-width: 700px) {
-
-            header h1 {
-                font-size: 30px;
-            }
-
-            .products {
-                grid-template-columns: 1fr;
-            }
-
-            .hero img {
-                height: 230px;
-            }
-
-            nav a {
-                margin: 0 7px;
-                font-size: 14px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
     <header>
+        <h1>Justine Motor Shop</h1>
 
-        <h1>🏍️ Justine Motor Shop</h1>
+        <p>Your trusted shop for motorcycle products and accessories.</p>
 
-        <p>
-            Quality Motorcycle Parts, Products & Accessories
-        </p>
-
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <main>
 
-    <!-- NAVIGATION -->
-    <nav>
+        <section>
+            <h2>Our Products</h2>
 
-        <a href="#home">Home</a>
-
-        <a href="#about">About</a>
-
-        <a href="#products">Products</a>
-
-        <a href="#contact">Contact</a>
-
-    </nav>
-
-
-    <main class="container">
-
-
-        <!-- HOME -->
-        <section class="hero" id="home">
-
-            <img
-                src="images.jpeg"
-                alt="Justine Motor Shop"
-            >
-
-            <h2>Welcome to Justine Motor Shop</h2>
-
-            <p>
-                Your trusted destination for motorcycle products,
-                riding equipment, and accessories.
-            </p>
-
-            <a href="#products" class="shop-button">
-                View Products
-            </a>
-
-        </section>
-
-
-        <!-- ABOUT -->
-        <section class="about" id="about">
-
-            <h2>About Us</h2>
-
-            <p>
-                Justine Motor Shop provides quality motorcycle
-                products and accessories for riders. We aim to
-                offer reliable products at affordable prices.
-            </p>
-
-            <p>
-                Whether you are a daily rider or a motorcycle
-                enthusiast, we have products to help make your
-                ride safer, more comfortable, and more enjoyable.
-            </p>
-
-        </section>
-
-
-        <!-- PRODUCTS -->
-        <h2 class="products-title" id="products">
-            Our Products
-        </h2>
-
-        <section class="products">
-
-
-            <!-- RIDER -->
-            <div class="product">
-
+            <article>
                 <img
-                    src="images (3).jpeg"
-                    alt="Motorcycle Rider"
+                    src="motorcycle-helmet.jpg"
+                    alt="Motorcycle Helmet"
+                    width="250"
                 >
 
-                <div class="product-content">
+                <h3>Motorcycle Helmet</h3>
 
-                    <h3>Riding Equipment</h3>
+                <p>
+                    A durable and comfortable helmet for safer rides.
+                </p>
 
-                    <p>
-                        Essential equipment and gear
-                        for motorcycle riders.
-                    </p>
+                <p class="price">
+                    Great Deal
+                </p>
+            </article>
 
-                    <p class="price">
-                        Quality Products
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT -->
-            <div class="product">
-
+            <article>
                 <img
-                    src="images (2).jpeg"
-                    alt="Motorcycle Product"
+                    src="motorcycle-gloves.jpg"
+                    alt="Motorcycle Gloves"
+                    width="250"
                 >
 
-                <div class="product-content">
+                <h3>Motorcycle Gloves</h3>
 
-                    <h3>Motorcycle Products</h3>
+                <p>
+                    Comfortable gloves that provide protection while riding.
+                </p>
 
-                    <p>
-                        Reliable motorcycle products
-                        for everyday use.
-                    </p>
+                <p class="price">
+                    Great Deal
+                </p>
+            </article>
 
-                    <p class="price">
-                        Affordable Prices
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- ACCESSORIES -->
-            <div class="product">
-
+            <article>
                 <img
-                    src="Motorcycle_Accessories.png"
+                    src="motorcycle-accessories.jpg"
                     alt="Motorcycle Accessories"
+                    width="250"
                 >
 
-                <div class="product-content">
+                <h3>Motorcycle Accessories</h3>
 
-                    <h3>Motorcycle Accessories</h3>
+                <p>
+                    Useful and stylish accessories for your motorcycle.
+                </p>
 
-                    <p>
-                        Useful and stylish accessories
-                        for your motorcycle.
-                    </p>
-
-                    <p class="price">
-                        Great Deals
-                    </p>
-
-                </div>
-
-            </div>
-
+                <p class="price">
+                    Great Deals
+                </p>
+            </article>
 
         </section>
-
-
-        <!-- OWNER -->
-        <section class="owner" id="contact">
-
-            <img
-                src="Messenger_creation_080ED62A-CD84-482D-9DB6-0C65CE79DAFC.jpeg"
-                alt="Justine Motor Shop owner"
-            >
-
-            <h2>Justine Kenneth D. San Diego</h2>
-
-            <p>
-                Owner of Justine Motor Shop
-            </p>
-
-            <p>
-                Quality products. Reliable service.
-                Better rides.
-            </p>
-
-        </section>
-
 
     </main>
 
-
-    <!-- FOOTER -->
     <footer>
-
-        <p>
-            © 2026 Justine Motor Shop
-        </p>
-
-        <p>
-            All Rights Reserved
-        </p>
-
+        <p>© 2026 Justine Motor Shop</p>
+        <p>All Rights Reserved</p>
     </footer>
 
 </body>
