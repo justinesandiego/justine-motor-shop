@@ -1,18 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Justine Motor Shop</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)
+                ),
+                url("https://images.unsplash.com/photo-1558980664-10ea9a5d6c2e?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .contact-box {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            color: #ffcc00;
+            font-size: 32px;
+        }
+
+        .contact-box p {
+            line-height: 1.7;
+        }
+
+        .contact-box ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .contact-box li {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 15px 0;
+            padding: 18px;
+            border-radius: 8px;
+        }
+
+        .contact-box a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
+
         <h1>Justine Motor Shop</h1>
 
-        <p>Your trusted shop for motorcycle products and accessories.</p>
+        <p>
+            Quality products. Reliable service. Better rides.
+        </p>
 
         <nav>
             <ul>
@@ -21,34 +129,41 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
 
-        <section>
+        <section class="contact-box">
 
             <h2>Contact Us</h2>
 
             <p>
-                Have questions about our products? You can reach us
-                using the contact information below.
+                Have questions about our products?
+                Feel free to contact Justine Motor Shop.
             </p>
 
             <ul>
+
                 <li>
-                    Email:
+                    📧 Email:
                     <a href="mailto:justinemotorshop@example.com">
                         justinemotorshop@example.com
                     </a>
                 </li>
 
                 <li>
-                    Phone: 0912-345-6789
+                    📱 Phone:
+                    <a href="tel:09123456789">
+                        0912-345-6789
+                    </a>
                 </li>
 
                 <li>
-                    Facebook: Justine Motor Shop
+                    📘 Facebook:
+                    Justine Motor Shop
                 </li>
+
             </ul>
 
         </section>
@@ -56,8 +171,11 @@
     </main>
 
     <footer>
+
         <p>© 2026 Justine Motor Shop</p>
+
         <p>All Rights Reserved</p>
+
     </footer>
 
 </body>
