@@ -1,45 +1,238 @@
-<form>
+<!DOCTYPE html>
+<html lang="en">
 
-    <fieldset>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <legend>Your details</legend>
+    <title>Contact - Justine Motor Shop</title>
 
-        <label for="name">Name</label>
-        <input
-            type="text"
-            id="name"
-            name="name"
-            required
-        >
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-        <label for="email">Email</label>
-        <input
-            type="email"
-            id="email"
-            name="email"
-            required
-        >
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
 
-        <label for="subject">Subject</label>
-        <select id="subject" name="subject">
-            <option value="product-question">Product question</option>
-            <option value="order-status">Order status</option>
-            <option value="product-availability">
-                Product availability
-            </option>
-            <option value="suggestion">Suggest a product</option>
-            <option value="other">Something else</option>
-        </select>
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)
+                ),
+                url("https://images.unsplash.com/photo-1558980664-10ea9a5d6c2e?auto=format&fit=crop&w=1600&q=80");
 
-        <label for="message">Message</label>
-        <textarea
-            id="message"
-            name="message"
-            required
-        ></textarea>
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
 
-        <button type="submit">Send message</button>
+        header {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 25px;
+            text-align: center;
+        }
 
-    </fieldset>
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
 
-</form>
+        header p {
+            margin: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .contact-box {
+            background: rgba(0, 0, 0, 0.78);
+            padding: 35px;
+            border-radius: 15px;
+        }
+
+        .contact-box h2 {
+            color: #ffcc00;
+            text-align: center;
+        }
+
+        .contact-box p {
+            line-height: 1.7;
+        }
+
+        .contact-box ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 25px;
+        }
+
+        .contact-box li {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 15px 0;
+            padding: 18px;
+            border-radius: 8px;
+        }
+
+        .contact-box a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        fieldset {
+            border: 1px solid #aaa;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        legend {
+            color: #ffcc00;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: 3px solid #ffcc00;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            background-color: #ffcc00;
+            color: #111;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e6b800;
+        }
+
+        button:focus {
+            outline: 3px solid white;
+            outline-offset: 2px;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>Justine Motor Shop</h1>
+
+        <p>
+            Quality products. Reliable service. Better rides.
+        </p>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <section class="contact-box">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                Have questions about our motorcycle products?
+                Feel free to contact Justine Motor Shop.
+            </p>
+
+
+            <!-- OLD CONTACT DETAILS -->
+            <ul>
+
+                <li>
+                    📧 Email:
+                    <a href="mailto:justinemotorshop@gmail.com">
+                        justinemotorshop@gmail.com
+                    </a>
+                </li>
+
+                <l
