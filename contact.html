@@ -63,57 +63,95 @@
         main {
             max-width: 800px;
             margin: auto;
-            padding: 80px 20px;
+            padding: 50px 20px;
         }
 
         .contact-box {
-            background: rgba(0, 0, 0, 0.75);
-            padding: 40px;
+            background: rgba(0, 0, 0, 0.78);
+            padding: 35px;
             border-radius: 15px;
-            text-align: center;
         }
 
         .contact-box h2 {
             color: #ffcc00;
-            font-size: 32px;
+            text-align: center;
         }
 
         .contact-box p {
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
-        .contact-box ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 30px;
+        fieldset {
+            border: 1px solid #aaa;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 25px;
         }
 
-        .contact-box li {
-            background: rgba(255, 255, 255, 0.1);
-            margin: 15px 0;
-            padding: 18px;
-            border-radius: 8px;
-        }
-
-        .contact-box a {
+        legend {
             color: #ffcc00;
-            text-decoration: none;
+            font-weight: bold;
+            padding: 0 10px;
         }
 
-        .contact-box a:hover {
-            text-decoration: underline;
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: 3px solid #ffcc00;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            background-color: #ffcc00;
+            color: #111;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e6b800;
         }
 
         footer {
             background: rgba(0, 0, 0, 0.9);
             text-align: center;
             padding: 20px;
+            margin-top: 30px;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
 
         <h1>Justine Motor Shop</h1>
@@ -122,16 +160,27 @@
             Quality products. Reliable service. Better rides.
         </p>
 
+        <!-- NAVIGATION -->
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
             </ul>
         </nav>
 
     </header>
 
+
+    <!-- MAIN -->
     <main>
 
         <section class="contact-box">
@@ -139,44 +188,48 @@
             <h2>Contact Us</h2>
 
             <p>
-                Have questions about our products?
-                Feel free to contact Justine Motor Shop.
+                Have a question about our products or services?
+                Fill out the form below and send us a message.
             </p>
 
-            <ul>
 
-                <li>
-                    📧 Email:
-                    <a href="mailto:justinemotorshop@gmail.com">
-                        justinemotorshop@gmail.com
-                    </a>
-                </li>
+            <!-- CONTACT FORM -->
+            <form>
 
-                <li>
-                    📱 Phone:
-                    <a href="tel:09621288185">
-                        0962-128-8185
-                    </a>
-                </li>
+                <fieldset>
 
-                <li>
-                    📘 Facebook:
-                    Justine Motor Shop
-                </li>
+                    <legend>Your details</legend>
 
-            </ul>
 
-        </section>
+                    <!-- NAME -->
+                    <label for="name">
+                        Name
+                    </label>
 
-    </main>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
 
-    <footer>
 
-        <p>© 2026 Justine Motor Shop</p>
+                    <!-- EMAIL -->
+                    <label for="email">
+                        Email
+                    </label>
 
-        <p>All Rights Reserved</p>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
 
-    </footer>
 
-</body>
-</html>
+                    <!-- SUBJECT -->
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                   
