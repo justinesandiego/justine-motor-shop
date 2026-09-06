@@ -342,3 +342,57 @@ footer p {
     }
 
 }
+
+/* ========================================
+   14. CARD AND FORM IMPROVEMENTS
+   ======================================== */
+
+/* Product cards */
+.product-card {
+    border-left: 6px solid var(--brand-color);
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    color: var(--dark-color);
+}
+
+
+/* Contact form fieldset */
+fieldset {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+legend {
+    color: var(--brand-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Form inputs */
+input,
+select,
+textarea {
+    padding: 12px;
+}
+
+
+/* Submit button */
+button {
+    background-color: var(--dark-color);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Visible keyboard focus */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--brand-color);
+    outline-offset: 2px;
+}
