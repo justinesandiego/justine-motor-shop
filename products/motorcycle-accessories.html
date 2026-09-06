@@ -2,182 +2,15 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Motorcycle Accessories - Justine Motor Shop</title>
-    <link rel="stylesheet" href="style.css">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+    <!-- ../ means go back one folder to find style.css -->
+    <link rel="stylesheet" href="../style.css">
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #222;
-        }
-
-        header {
-            background-color: #111;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0 0;
-        }
-
-        nav li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #ffcc00;
-        }
-
-        main {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        .product-detail {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .product-detail img {
-            display: block;
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            margin: 0 auto 30px;
-            border-radius: 12px;
-        }
-
-        .product-detail h1 {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .description {
-            line-height: 1.7;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 30px;
-        }
-
-        th,
-        td {
-            border: 1px solid #ccc;
-            padding: 12px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #111;
-            color: white;
-        }
-
-        /* ORDER ENQUIRY FORM */
-
-        .order-enquiry {
-            margin-top: 30px;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .order-enquiry h2 {
-            text-align: center;
-        }
-
-        .order-enquiry label {
-            display: block;
-            margin-top: 18px;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        .order-enquiry input[type="number"],
-        .order-enquiry input[type="email"] {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 16px;
-        }
-
-        .order-enquiry fieldset {
-            margin-top: 25px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-
-        .order-enquiry legend {
-            font-weight: bold;
-        }
-
-        .order-enquiry fieldset label {
-            font-weight: normal;
-            margin: 12px 0;
-        }
-
-        .order-enquiry input[type="radio"],
-        .order-enquiry input[type="checkbox"] {
-            margin-right: 8px;
-        }
-
-        .order-enquiry button {
-            width: 100%;
-            margin-top: 25px;
-            padding: 14px;
-            background-color: #111;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .order-enquiry button:hover {
-            background-color: #ffcc00;
-            color: #111;
-        }
-
-        footer {
-            background-color: #111;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-    </style>
 </head>
 
 <body>
@@ -187,7 +20,9 @@
         <h2>Justine Motor Shop</h2>
 
         <nav>
+
             <ul>
+
                 <li>
                     <a href="../index.html">Home</a>
                 </li>
@@ -199,13 +34,18 @@
                 <li>
                     <a href="../contact.html">Contact</a>
                 </li>
+
             </ul>
+
         </nav>
 
     </header>
 
 
     <main>
+
+
+        <!-- PRODUCT DETAIL -->
 
         <section class="product-detail">
 
@@ -215,6 +55,7 @@
                 src="1000x1000__motoracc-1677649858932.jpg"
                 alt="Motorcycle Accessories"
             >
+
 
             <div class="description">
 
@@ -241,6 +82,8 @@
 
             </div>
 
+
+            <!-- SPECIFICATIONS -->
 
             <h2>Specifications</h2>
 
@@ -289,6 +132,7 @@
 
             <form>
 
+
                 <!-- QUANTITY -->
 
                 <label for="quantity">
@@ -310,34 +154,46 @@
 
                     <legend>Delivery method</legend>
 
+
                     <label for="standard-delivery">
+
                         <input
                             type="radio"
                             id="standard-delivery"
                             name="delivery"
                             value="standard"
                         >
+
                         Standard Delivery
+
                     </label>
 
+
                     <label for="express-delivery">
+
                         <input
                             type="radio"
                             id="express-delivery"
                             name="delivery"
                             value="express"
                         >
+
                         Express Delivery
+
                     </label>
 
+
                     <label for="store-pickup">
+
                         <input
                             type="radio"
                             id="store-pickup"
                             name="delivery"
                             value="pickup"
                         >
+
                         Store Pickup
+
                     </label>
 
                 </fieldset>
@@ -349,34 +205,46 @@
 
                     <legend>Optional extras</legend>
 
+
                     <label for="gift-wrapping">
+
                         <input
                             type="checkbox"
                             id="gift-wrapping"
                             name="extras"
                             value="gift-wrapping"
                         >
+
                         Gift Wrapping
+
                     </label>
 
+
                     <label for="express-handling">
+
                         <input
                             type="checkbox"
                             id="express-handling"
                             name="extras"
                             value="express-handling"
                         >
+
                         Express Handling
+
                     </label>
 
+
                     <label for="special-packaging">
+
                         <input
                             type="checkbox"
                             id="special-packaging"
                             name="extras"
                             value="special-packaging"
                         >
+
                         Special Packaging
+
                     </label>
 
                 </fieldset>
@@ -406,8 +274,11 @@
 
         </section>
 
+
     </main>
 
+
+    <!-- FOOTER -->
 
     <footer>
 
@@ -416,6 +287,7 @@
         <p>All Rights Reserved</p>
 
     </footer>
+
 
 </body>
 </html>
