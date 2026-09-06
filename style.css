@@ -1,1 +1,344 @@
+/* ========================================
+   1. VARIABLES
+   ======================================== */
 
+:root {
+    --brand-color: #ffcc00;
+    --dark-color: #111111;
+    --muted-color: #777777;
+    --light-background: #f4f4f4;
+}
+
+
+/* ========================================
+   2. BASE STYLES
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-background);
+    color: var(--dark-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--brand-color);
+}
+
+
+/* ========================================
+   3. HEADER
+   ======================================== */
+
+header {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+}
+
+header p {
+    color: var(--muted-color);
+}
+
+
+/* ========================================
+   4. NAVIGATION
+   ======================================== */
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--brand-color);
+}
+
+
+/* ========================================
+   5. MAIN LAYOUT
+   ======================================== */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   6. PRODUCT CARDS
+   ======================================== */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-content {
+    padding: 20px;
+}
+
+.product-content h3 {
+    margin-top: 0;
+}
+
+.price {
+    color: var(--brand-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* ========================================
+   7. PRODUCT DETAIL
+   ======================================== */
+
+.product-detail {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-detail img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    border-radius: 12px;
+}
+
+.product-detail h1 {
+    text-align: center;
+}
+
+.description {
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   8. TABLE
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+
+/* ========================================
+   9. OWNER / ABOUT SECTION
+   ======================================== */
+
+.owner {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.owner img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* ========================================
+   10. CONTACT SECTION
+   ======================================== */
+
+.contact-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-box h2 {
+    color: var(--brand-color);
+}
+
+
+/* ========================================
+   11. FORMS
+   ======================================== */
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+fieldset {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+fieldset label {
+    font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: var(--dark-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--brand-color);
+    color: var(--dark-color);
+}
+
+
+/* ========================================
+   12. FOOTER
+   ======================================== */
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+    color: white;
+}
+
+
+/* ========================================
+   13. MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .product-detail {
+        padding: 20px;
+    }
+
+}
