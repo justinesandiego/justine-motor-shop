@@ -122,6 +122,9 @@ section {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-left: 6px solid var(--brand-color);
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .product-card img {
@@ -136,6 +139,11 @@ section {
 
 .product-content h3 {
     margin-top: 0;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    color: var(--dark-color);
 }
 
 .price {
@@ -254,7 +262,7 @@ input,
 select,
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #cccccc;
     border-radius: 5px;
     font-family: inherit;
@@ -270,11 +278,13 @@ fieldset {
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #cccccc;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 legend {
     font-weight: bold;
+    color: var(--brand-color);
+    font-size: 20px;
 }
 
 fieldset label {
@@ -323,7 +333,155 @@ footer p {
 
 
 /* ========================================
-   13. MOBILE
+   13. CONTACT PAGE
+   ======================================== */
+
+.contact-page {
+    color: white;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1558980664-10ea9a5d6c2e?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-page header {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.contact-page main {
+    max-width: 800px;
+    padding: 50px 20px;
+}
+
+.contact-page .contact-box {
+    background: rgba(0, 0, 0, 0.78);
+    padding: 35px;
+}
+
+.contact-page .contact-box h2 {
+    text-align: center;
+}
+
+.contact-page .contact-box p {
+    line-height: 1.7;
+}
+
+.contact-page .contact-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.contact-page .contact-box li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 15px 0;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.contact-page .contact-box a {
+    color: var(--brand-color);
+}
+
+.contact-page .contact-box a:hover {
+    text-decoration: underline;
+}
+
+.contact-page fieldset {
+    border: 1px solid #aaa;
+    padding: 25px;
+}
+
+.contact-page input,
+.contact-page select,
+.contact-page textarea {
+    border: none;
+}
+
+.contact-page button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background-color: var(--brand-color);
+    color: var(--dark-color);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.contact-page button:hover {
+    background-color: #e6b800;
+}
+
+.contact-page button:focus {
+    outline: 3px solid white;
+    outline-offset: 2px;
+}
+
+
+/* ========================================
+   14. ABOUT PAGE
+   ======================================== */
+
+.about-page {
+    color: white;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about-page header {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.about-page main {
+    max-width: 900px;
+    padding: 50px 20px;
+}
+
+.about-page .owner,
+.about-page .story {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: none;
+}
+
+.about-page .owner img {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.about-page h2 {
+    color: var(--brand-color);
+}
+
+.about-page .story p {
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   15. MOBILE
    ======================================== */
 
 @media (max-width: 600px) {
@@ -341,58 +499,4 @@ footer p {
         padding: 20px;
     }
 
-}
-
-/* ========================================
-   14. CARD AND FORM IMPROVEMENTS
-   ======================================== */
-
-/* Product cards */
-.product-card {
-    border-left: 6px solid var(--brand-color);
-    margin-bottom: 20px;
-}
-
-.product-card h3 {
-    font-size: 24px;
-    color: var(--dark-color);
-}
-
-
-/* Contact form fieldset */
-fieldset {
-    padding: 20px;
-    border-radius: 10px;
-}
-
-legend {
-    color: var(--brand-color);
-    font-size: 20px;
-    font-weight: bold;
-}
-
-
-/* Form inputs */
-input,
-select,
-textarea {
-    padding: 12px;
-}
-
-
-/* Submit button */
-button {
-    background-color: var(--dark-color);
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-
-/* Visible keyboard focus */
-input:focus,
-select:focus,
-textarea:focus {
-    outline: 3px solid var(--brand-color);
-    outline-offset: 2px;
 }
