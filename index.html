@@ -5,98 +5,11 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Justine Motor Shop</title>
+
     <link rel="stylesheet" href="style.css">
-    
-    <style>
-        * {
-            box-sizing: border-box;
-        }
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #222;
-        }
-
-        header {
-            background: #111;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 20px 0 0;
-        }
-
-        nav li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #ffcc00;
-        }
-
-        main {
-            max-width: 1100px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .product {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .product img {
-            width: 100%;
-            max-width: 250px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .product h3 {
-            margin-top: 15px;
-        }
-
-        .price {
-            font-weight: bold;
-            color: #d88b00;
-        }
-
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
 </head>
 
 <body>
@@ -111,13 +24,24 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
             </ul>
         </nav>
 
     </header>
+
 
     <main>
 
@@ -127,9 +51,11 @@
 
             <div class="products">
 
-                <article class="product">
 
-                    <!-- KEEP YOUR ORIGINAL PHOTO HERE -->
+                <!-- PRODUCT 1 -->
+
+                <article class="product product-card">
+
                     <img
                         src="images (4).jpeg"
                         alt="Motorcycle Helmet"
@@ -147,15 +73,16 @@
                     </p>
 
                     <a href="products/motorcycle-accessories.html">
-    View Details
-</a>
+                        View Details
+                    </a>
 
                 </article>
 
 
-                <article class="product">
+                <!-- PRODUCT 2 -->
 
-                    <!-- KEEP YOUR ORIGINAL PHOTO HERE -->
+                <article class="product product-card">
+
                     <img
                         src="images (5).jpeg"
                         alt="Motorcycle Gloves"
@@ -175,9 +102,10 @@
                 </article>
 
 
-                <article class="product">
+                <!-- PRODUCT 3 -->
 
-                    <!-- KEEP YOUR ORIGINAL PHOTO HERE -->
+                <article class="product product-card">
+
                     <img
                         src="images.jpeg"
                         alt="Motorcycle Accessories"
@@ -196,11 +124,13 @@
 
                 </article>
 
+
             </div>
 
         </section>
 
     </main>
+
 
     <footer>
 
