@@ -52,6 +52,7 @@ header {
     text-align: center;
 }
 
+
 /* FLEXBOX HEADER - TASK 6.1 */
 
 .site-header {
@@ -85,13 +86,11 @@ nav ul {
     padding: 0;
     margin: 0;
 
-    /* FLEXBOX NAVIGATION - TASK 6.1 */
     display: flex;
     gap: 20px;
 }
 
 nav li {
-    /* Flexbox replaces inline-block */
     margin: 0;
 }
 
@@ -125,13 +124,18 @@ section {
    6. CENTRED SECTION HEADING
    ======================================== */
 
-/* Horizontally and vertically centres the heading */
+/* Keeps the Home page heading centered */
 
 section h2 {
-    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Only the Home page gets the extra height */
+
+body:not(.about-page):not(.contact-page) section h2 {
+    height: 150px;
 }
 
 
@@ -462,7 +466,6 @@ footer p {
 .contact-page button:focus {
     outline: 3px solid white;
     outline-offset: 2px;
-}
 
 
 /* ========================================
