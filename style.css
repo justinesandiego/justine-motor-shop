@@ -52,12 +52,22 @@ header {
     text-align: center;
 }
 
-header h1,
-header h2 {
+/* FLEXBOX HEADER - TASK 6.1 */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    text-align: left;
+}
+
+.site-header h1 {
     margin: 0;
 }
 
-header p {
+.site-header p {
+    margin: 5px 0 0;
     color: var(--muted-color);
 }
 
@@ -67,18 +77,22 @@ header p {
    ======================================== */
 
 nav {
-    margin-top: 20px;
+    margin-top: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+
+    /* FLEXBOX NAVIGATION - TASK 6.1 */
+    display: flex;
+    gap: 20px;
 }
 
 nav li {
-    display: inline-block;
-    margin: 0 15px;
+    /* Flexbox replaces inline-block */
+    margin: 0;
 }
 
 nav a {
@@ -108,7 +122,21 @@ section {
 
 
 /* ========================================
-   6. PRODUCT CARDS
+   6. CENTRED SECTION HEADING
+   ======================================== */
+
+/* Horizontally and vertically centres the heading */
+
+section h2 {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ========================================
+   7. PRODUCT CARDS
    ======================================== */
 
 .products {
@@ -122,9 +150,11 @@ section {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
     border-left: 6px solid var(--brand-color);
     margin-bottom: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 .product-card img {
@@ -154,7 +184,7 @@ section {
 
 
 /* ========================================
-   7. PRODUCT DETAIL
+   8. PRODUCT DETAIL
    ======================================== */
 
 .product-detail {
@@ -182,7 +212,7 @@ section {
 
 
 /* ========================================
-   8. TABLE
+   9. TABLE
    ======================================== */
 
 table {
@@ -206,7 +236,7 @@ th {
 
 
 /* ========================================
-   9. OWNER / ABOUT SECTION
+   10. OWNER / ABOUT SECTION
    ======================================== */
 
 .owner {
@@ -226,7 +256,7 @@ th {
 
 
 /* ========================================
-   10. CONTACT SECTION
+   11. CONTACT SECTION
    ======================================== */
 
 .contact-box {
@@ -242,7 +272,7 @@ th {
 
 
 /* ========================================
-   11. FORMS
+   12. FORMS
    ======================================== */
 
 form {
@@ -314,8 +344,18 @@ button:hover {
 }
 
 
+/* VISIBLE KEYBOARD FOCUS */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--brand-color);
+    outline-offset: 2px;
+}
+
+
 /* ========================================
-   12. FOOTER
+   13. FOOTER
    ======================================== */
 
 footer {
@@ -333,7 +373,7 @@ footer p {
 
 
 /* ========================================
-   13. CONTACT PAGE
+   14. CONTACT PAGE
    ======================================== */
 
 .contact-page {
@@ -426,7 +466,7 @@ footer p {
 
 
 /* ========================================
-   14. ABOUT PAGE
+   15. ABOUT PAGE
    ======================================== */
 
 .about-page {
@@ -481,14 +521,28 @@ footer p {
 
 
 /* ========================================
-   15. MOBILE
+   16. MOBILE
    ======================================== */
 
 @media (max-width: 600px) {
 
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-header nav {
+        margin-top: 20px;
+    }
+
+    .site-header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
     nav li {
-        display: block;
-        margin: 10px 0;
+        margin: 0;
     }
 
     main {
