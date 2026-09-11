@@ -446,7 +446,9 @@ footer p {
 .contact-page input,
 .contact-page select,
 .contact-page textarea {
-    border: none;
+    border: 1px solid #cccccc;
+    background-color: white;
+    color: var(--dark-color);
 }
 
 .contact-page button {
@@ -466,7 +468,7 @@ footer p {
 .contact-page button:focus {
     outline: 3px solid white;
     outline-offset: 2px;
-
+}
 
 /* ========================================
    15. ABOUT PAGE
