@@ -559,3 +559,39 @@ footer p {
     }
 
 }
+
+/* ========================================
+   17. CONTACT FORM FIX
+   ======================================== */
+
+.contact-page form {
+    color: var(--dark-color);
+}
+
+.contact-page form label {
+    color: var(--dark-color);
+}
+
+.contact-page form input,
+.contact-page form select,
+.contact-page form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: white;
+    color: var(--dark-color);
+}
+
+.contact-page form textarea {
+    min-height: 120px;
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-page form input:focus,
+.contact-page form select:focus,
+.contact-page form textarea:focus {
+    outline: 3px solid var(--brand-color);
+    outline-offset: 2px;
+}
