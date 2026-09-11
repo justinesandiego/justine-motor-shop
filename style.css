@@ -143,18 +143,18 @@ body:not(.about-page):not(.contact-page) section h2 {
    7. PRODUCT CARDS
    ======================================== */
 
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .product-card {
+    flex: 1 1 240px;
     background-color: white;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
     border-left: 6px solid var(--brand-color);
     margin-bottom: 20px;
     text-align: center;
