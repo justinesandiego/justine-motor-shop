@@ -595,3 +595,93 @@ footer p {
     outline: 3px solid var(--brand-color);
     outline-offset: 2px;
 }
+
+/* ========================================
+   MODULE 7.4 - GRID PAGE SKELETON
+   ======================================== */
+
+body {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+        "masthead masthead"
+        "side main"
+        "foot foot";
+    gap: 16px;
+}
+
+/* PAGE REGIONS */
+
+header {
+    grid-area: masthead;
+}
+
+aside {
+    grid-area: side;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: foot;
+}
+
+
+/* ========================================
+   SIDEBAR
+   ======================================== */
+
+.sidebar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+.sidebar h2 {
+    color: var(--dark-color);
+    margin-top: 0;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+
+/* ========================================
+   PRODUCT FLEX ROW
+   ======================================== */
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.product-card {
+    flex: 1 1 240px;
+}
+
+
+/* ========================================
+   MOBILE GRID
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "masthead"
+            "side"
+            "main"
+            "foot";
+    }
+
+}
