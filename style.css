@@ -685,3 +685,53 @@ footer {
     }
 
 }
+
+/* ========================================
+   MIDTERM CHECKPOINT - MOBILE FIRST
+   ======================================== */
+
+/* Base layout - mobile */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "masthead"
+        "main"
+        "side"
+        "foot";
+    gap: 16px;
+}
+
+/* Page regions */
+header {
+    grid-area: masthead;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: side;
+}
+
+footer {
+    grid-area: foot;
+}
+
+
+/* ========================================
+   TABLET AND DESKTOP
+   ======================================== */
+
+@media (min-width: 700px) {
+
+    body {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "masthead masthead"
+            "side main"
+            "foot foot";
+    }
+
+}
