@@ -673,19 +673,15 @@ footer {
    MOBILE GRID
    ======================================== */
 
-@media (max-width: 700px) {
-
+@media (min-width: 700px) {
     body {
-        grid-template-columns: 1fr;
+        grid-template-columns: 220px 1fr;
         grid-template-areas:
-            "masthead"
-            "side"
-            "main"
-            "foot";
+            "masthead masthead"
+            "side main"
+            "foot foot";
     }
-
 }
-
 /* ========================================
    MIDTERM CHECKPOINT - MOBILE FIRST
    ======================================== */
